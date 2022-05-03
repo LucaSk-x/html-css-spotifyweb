@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="app-container">        <!-- contenitore 100vh -->
+        <div class="flex-grow d-flex">      <!-- Blocco sopra in grow con align-items stretch per forzare i figli ad occupare tutta l'altezza disponibile -->
+            <div class="side-bar">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div class="nav-menu d-flex">
+                    <div class="home-nav">
+                        <img src="img/home.svg" alt="">
+                        <span>Home</span>
+                    </div>
+                    <div class="search">
+                        <img src="img/search.svg" alt="">
+                        <span>Cerca</span>
+                    </div>
+                    <div class="liberary">
+                        <img src="img/libreria.svg" alt="">
+                        <span>La mia libreria</span>
+                    </div>
+                </div>
+                <div class="play-list"></div>
+                <div class="install"></div>
+            </div>
+            <div class="main-container"></div>
+        </div>
+        <div class="player-container">      <!-- Blocco sotto con menu play e shrink 0 -->
+
+        </div>
+    </div>
+</body>
+
+</html>
