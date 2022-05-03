@@ -34,6 +34,24 @@ h6 {
     font-size: .67rem;
 }
 
+/* utilities */
+
+.padding {
+    padding: 1rem;
+}
+
+.padding-sm {
+    padding: .5rem;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-sm {
+    margin: .5rem;
+}
+
 .d-flex {
     display: flex;
 }
@@ -41,6 +59,11 @@ h6 {
 .flex-grow {
     flex-grow: 1;
 }
+
+:root {
+    --gray: #a3a3a3
+}
+
 
 /* container app */
 
@@ -62,7 +85,10 @@ h6 {
 
 .logo img {
     width: 100%;
-    padding: 1rem;
+}
+
+.nav-menu {
+    padding: 1rem 0;
 }
 
 .nav-menu.d-flex {
@@ -71,16 +97,73 @@ h6 {
     flex-direction: column;
 }
 
+.nav-menu .d-flex {
+    gap: .7rem;
+}
+
 .nav-menu img {
     width: 25px;
 }
 
 .nav-menu span {
-    color: white;
+    color: var(--gray);
+    align-self: center;
 }
+
+.menu-playlist h4 {
+    text-transform: uppercase;
+    color: white;
+    padding: .5rem 0;
+}
+
+.add-playlist {
+    display: flex;
+    gap: 1rem;
+}
+
+.add-playlist i {
+    font-size: 2.5rem;
+}
+
+.add-playlist span {
+    align-self: center;
+}
+
+.play-list * {
+    color: var(--gray);
+}
+
+.list-playlist ul {
+    list-style: none;
+    color: var(--gray);
+}
+
+.list-playlist ul li {
+    padding: 0.5rem 0;
+}
+
+.install img {
+    width: 25px;
+}
+
+.install span {
+    color: var(--gray);
+    align-self: center;
+    padding: 0 .5rem;
+}
+
+.border {
+    border-top: 1px solid var(--gray);
+    margin: 0.5rem 0;
+}
+
+.install.bottom.d-flex img {
+    width: 25px;
+    height: 25px;
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
 
 /* main container */
 
-.main-container {
-
-}

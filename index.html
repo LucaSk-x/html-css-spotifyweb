@@ -7,32 +7,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 <body>
     <div class="app-container">        <!-- contenitore 100vh -->
         <div class="flex-grow d-flex">      <!-- Blocco sopra in grow con align-items stretch per forzare i figli ad occupare tutta l'altezza disponibile -->
-            <div class="side-bar">
+            <div class="side-bar padding">
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
                 <div class="nav-menu d-flex">
-                    <div class="home-nav">
+                    <div class="home-nav d-flex">
                         <img src="img/home.svg" alt="">
                         <span>Home</span>
                     </div>
-                    <div class="search">
+                    <div class="search d-flex">
                         <img src="img/search.svg" alt="">
                         <span>Cerca</span>
                     </div>
-                    <div class="liberary">
+                    <div class="liberary d-flex">
                         <img src="img/libreria.svg" alt="">
                         <span>La mia libreria</span>
                     </div>
                 </div>
-                <div class="play-list"></div>
-                <div class="install"></div>
+                <div class="play-list flex-grow">
+                    <div class="menu-playlist">
+                        <h4>Playlist</h4>
+                        <div class="add-playlist">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <span>Crea playlist</span>
+                        </div>
+                        <div class="list-playlist">
+                            <ul>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="install d-flex">
+                    <img src="img/download.svg" alt="">
+                    <span>Installa App</span>
+                </div>
+                <div class="border"></div>
+                <div class="install bottom d-flex">
+                    <img src="img/profile.svg" alt="">
+                    <span>Don Joeh</span>
+                </div>
             </div>
             <div class="main-container"></div>
         </div>
