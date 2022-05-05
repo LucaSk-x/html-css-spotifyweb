@@ -126,7 +126,7 @@ a {
     color: var(--white)
 }
 
-.liberary:hover>* {
+.librerary:hover>* {
     color: var(--white)
 }
 
@@ -433,4 +433,130 @@ padding: .5rem;
 .song-container .subtitle.info {
     color: var(--gray);
     padding: 1rem .5rem;
+}
+
+/* side bar 550px */
+
+.side-bar-500 {
+    display: none;
+    width: 50px;
+    flex-shrink: 0;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.nav-logo svg {
+    color: var(--gray);
+    width: 25px;
+    padding: .5rem;
+}
+
+.upper-button-sb.column {
+    align-items: center;
+}
+
+.upper-button-sb i {
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.side-bar-500 .nav-logo svg {
+    width: 40px;
+}
+
+.side-bar-500 .user-logo {
+    justify-content: flex-end;
+}
+
+.side-bar-500 .user-logo img {
+    width: 20px;
+}
+
+.side-bar-500 .lower-button-sb img {
+    padding: .5rem 0;
+}
+
+/* media quaery */
+
+/* FINO A 1100PX */
+@media screen and (max-width: 1100px) {
+    .row.d-flex {
+        flex-wrap: wrap;
+    }
+
+    .nav-song.d-flex.flex-grow {
+        flex-wrap: wrap;
+    }
+
+    .song-container .row .col {
+        flex-basis: calc(100% / 4);
+    }
+}
+
+
+
+/* FINO A 700PX */
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 12px;
+    }
+
+    .padding {
+        padding: .5rem;
+    }
+
+    .player-command.d-flex {
+        gap: unset;
+    }
+
+    .player-left.d-flex {
+        gap: unset;
+    }
+
+    .player-left.d-flex> :nth-child(2) {
+        padding: 0 .3rem;
+    }
+
+    .player-left-icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player-command.d-flex i {
+        padding: .5rem;
+    }
+
+    .song-container .row .col {
+        flex-basis: calc(100% / 2);
+    }
+
+    .player-right .icon-player i {
+        padding: .2rem;
+    }
+
+    .bar-volume {
+        width: 80px;
+    }
+}
+
+
+
+/* FINO A 500PX */
+@media screen and (max-width: 500px) {
+    .side-bar.padding {
+        display: none;
+    }
+
+    .side-bar-500 {
+        display: flex;
+    }
+
+    .player-left.d-flex.padding img {
+        width: 40px;
+    }
+
 }
